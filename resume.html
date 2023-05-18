@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .pdf-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pdf-container">
+      <canvas id="pdf-render"></canvas>
+    </div>
+    <script>
+      // Load PDF document
+
+      const pdfUrl = "/assets/images/Rahul Kumar.pdf";
+      pdfjsLib.getDocument(pdfUrl).promise.then((pdf) => {
+        // Get the first page
+        pdf.getPage(1).then((page) => {
+          const viewport = page.getViewport({ scale: 1 });
+          const canvas = document.getElementById("pdf-render");
+          const context = canvas.getContext("2d");
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+          // Render the page
+          page.render({ canvasContext: context, viewport: viewport });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+<!-- Belongs to "IMPERFECTO" -->

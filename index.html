@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>IMPERFECTO -A Developer.</title>
+    <meta
+      name="title"
+      content="Rahul - I'm User Competitive Coder & Developer."
+    />
+    <meta name="description" content="This is a personal portfolio html" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/icons8-r-32.png" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <h2>RK "IMPERFECTO"</h2>
+          <!-- <img
+            src="./assets/images/name.png"
+            width="64"
+            height="24"
+            alt="Rahul home"
+          /> -->
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <h2>RK "IMPERFECTO"</h2>
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#section about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#section project1" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+            <li>
+              <a href="/resume.html" class="navbar-link">Resume</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:rahulkumarkushwaha81@email.com" class="contact-link"
+              >rahulkumarkushwaha81@email.com</a
+            >
+
+            <a href="tel:8708935629" class="contact-link">8708935629</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rahul-suryawanshi-961857250"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/Rksuryawanshi" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://instagram.com/rksuryawanshi_sy?igshid=ZGUzMzM3NWJiOQ=="
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/rksuryawanshi_sy?igshid=ZGUzMzM3NWJiOQ=="
+                class="social-link"
+              >
+                <img src="/assets/images/icons8-geeksforgeeks .svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.jpeg"
+                width="560"
+                height="540"
+                alt="Rahul"
+                class="w-100"
+                data-reveal="top"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+              >
+                I'm Developer & Competitive Coder .
+              </h1>
+
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                Hello! I'm Rahul, a web Developer & also App,ML,Ai enthusiast &
+                Competitive Coder belongs to Delhi. I’m very passionate about
+                the work that I do.
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#" class="btn btn-primary">See My Works</a>
+
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+<section id="section about"></section>
+        <section class="section about" aria-label="about">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left">
+                <h2 class="h2 section-title">What I Do?</h2>
+
+                <p class="section-text">
+                  Currently I'm a second year student , Enjoying my developing
+                  and coding journey of CSE B.tech course. I know about WEb
+                  development and currently working on Flutter and Mostly i give
+                  my time to Projects(Mega).
+                </p>
+              </div>
+
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Web Development</p>
+
+                    <span class="span">70 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 70%; background-color: #c7b1dd"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Mobile Development</p>
+
+                    <span class="span">10 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 10%; background-color: #8caeec"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Competetive Coding</p>
+
+                    <span class="span">45 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 45%; background-color: #b0d4c1"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>10Th Grade</p>
+
+                    <span class="span">91 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 91%; background-color: #e3a6b6"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>12Th Grade</p>
+
+                    <span class="span">95 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 95%; background-color: #e3d0a6"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>College CGPA</p>
+
+                    <span class="span">8.5</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="grid-list">
+              <li data-reveal="bottom">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-1.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web design icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Web Development</h3>
+
+                  <p class="card-text">
+                    I have done lot of work font-end projects and not much more
+                    in backend ,but working on it. I have done a
+                    <b>Mega Project</b> for GSC.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.25s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-2.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="mobile design icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Mobile Development</h3>
+
+                  <p class="card-text">
+                    I have started exploring Mobile development using Flutter .I
+                    always try to work on <b><b>Unique</b></b>
+                    Big Projects.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.5s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-3.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web development icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Coding</h3>
+
+                  <p class="card-text">
+                    GFG is well known platform ,I daily try to solve problem and
+                    on other platform like CodeChhef.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.75s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icons8-leadership-52.png"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web seo icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">LEADERSHIP</h3>
+
+                  <p class="card-text">
+                    As I have experience of school head boy and i have qualities
+                    of leadership like soft-skill, well behave and how to manage
+                    difficult situation.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+<section id="section project1"></section>
+        <section class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">
+                  Latest Projects
+                </h2>
+
+                <p class="section-text">
+                  Check out some of my latest projects with creative ideas.
+                </p>
+              </div>
+
+              <a href="#" class="btn btn-secondary">See All Projects</a>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div
+                  class="project-card project-card-1"
+                  style="background-color: #f8f5fb"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #a07cc5">Web Project</p>
+
+                    <h3 class="h3 card-title">Helping NGO</h3>
+
+                    <p class="card-text">
+                      Situation when, People are willing to help street animals
+                      that have been involved in accidents, but are unable to do
+                      so because they do not have any contact information for
+                      veterinary doctors or animal rescue NGOs. As a result,
+                      these animals often die without receiving any assistance.
+                      To address this issue, we have created a website that
+                      allows people to register the location and provide an
+                      image or short video of the injured animal. Once this
+                      information is submitted, any nearby veterinary doctor or
+                      animal rescue NGO will be notified and can reach the
+                      location to provide necessary help and rescue. This
+                      website serves as a platform to connect people who want to
+                      help injured animals with the relevant organizations that
+                      can provide assistance.
+                    </p>
+
+                    <a
+                      href=http://helpingngo.dev/
+                      class="btn-text"
+                      style="color: #a07cc5"
+                    >
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/project 1.jpeg"
+                      width="650"
+                      height="370"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                class="project-card project-card-1"
+                style="background-color: #98939e"
+              >
+              <div class="card-content" data-reveal="left">
+                <h1 class="card" style="color: #faf7fd">Wait for uploading Projects...</h1>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/icon-5.svg"
+                    width="44"
+                    height="44"
+                    loading="lazy"
+                    alt="envelop icon"
+                  />
+                </div>
+
+                <h2 class="h2 section-title">
+                  If you like what you see, let's work together.
+                </h2>
+
+                <p class="section-text">
+                  I'm eager to learn and can explore together as a team. Have
+                  any questions? Reach out to me from this contact form and I
+                  will get back to you shortly.
+                </p>
+              </div>
+
+              <form action="" class="contact-form" data-reveal="right">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© 2023 IMPERFECTO. All rights reserved.</p>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rahul-suryawanshi-961857250"
+              class="social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Rksuryawanshi" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://instagram.com/rksuryawanshi_sy?igshid=ZGUzMzM3NWJiOQ=="
+              class="social-link"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/rksuryawanshi_sy?igshid=ZGUzMzM3NWJiOQ=="
+              class="social-link"
+            >
+              <img src="/assets/images/icons8-geeksforgeeks .svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <h6>Refrence (Get help): Thanks @ insta id:stella</h6>
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!-- Belongs to "IMPERFECTO" -->
