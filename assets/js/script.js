@@ -70,6 +70,26 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+function sendEmail() {
+  alert("3");
+  Email.send({
+    // Host: "smtp.elasticemail.com",
+    SecureToken: "ab7db2b5-3020-4231-9eec-039b232072c4",
+    // Username: "imperfecto.rk@gmail.com",
+    // Password: "@1234567iI",
+    From: "imperfecto.rk@gmail.com",
+    To: "rahulkumarkushwaha81@gmail.com",
+    Subject: "PORTFOLIO Form",
+    Body:
+      "Name:" +
+      document.getElementById("name").value +
+      " <br> Email " +
+      document.getElementById("email").value +
+      "<br> Message: " +
+      document.getElementById("message").value,
+  }).then((message) => alert("message sent succusfully"));
+}
+
 
 
 // Belongs to "IMPERFECTO"
