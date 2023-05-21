@@ -71,7 +71,7 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
 function sendEmail() {
-  alert("3");
+ 
   Email.send({
     // Host: "smtp.elasticemail.com",
     SecureToken: "ab7db2b5-3020-4231-9eec-039b232072c4",
