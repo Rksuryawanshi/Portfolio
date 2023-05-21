@@ -503,7 +503,7 @@
                 </p>
               </div>
 
-              <form action="" class="contact-form" data-reveal="right">
+              <form onsubmit="sendEmail(); reset(); return false; action="" class="contact-form" data-reveal="right">
                 <div class="input-wrapper">
                   <input
                     type="text"
@@ -586,6 +586,8 @@
     <!-- 
     - custom js link
   -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
     <script src="./assets/js/script.js"></script>
 
     <!-- 
